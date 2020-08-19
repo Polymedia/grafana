@@ -169,7 +169,7 @@ export const TimePickerContentWithScreenSize: React.FC<PropsWithScreenSize> = pr
           />
           <div className={styles.spacing} />
           <TimeRangeList
-            title="Other quick ranges"
+            title="Другие варианты"
             options={otherOptions}
             onSelect={props.onChange}
             value={props.value}

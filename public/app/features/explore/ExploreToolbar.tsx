@@ -189,19 +189,19 @@ export class UnConnectedExploreToolbar extends PureComponent<Props> {
         <div className="explore-toolbar-item">
           <div className="explore-toolbar-header">
             <div className="explore-toolbar-header-title">
-              {exploreId === 'left' && (
-                {/*<span className="navbar-page-btn">
-                  <Icon
-                    name="compass"
-                    size="lg"
-                    className={css`
-                      margin-right: 6px;
-                      margin-bottom: 3px;
-                    `}
-                  />
-                  Explore
-                </span>*/}
-              )}
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
             {splitted && (
               <IconButton className="explore-toolbar-header-close" onClick={() => closeSplit(exploreId)} name="times" />
@@ -212,20 +212,20 @@ export class UnConnectedExploreToolbar extends PureComponent<Props> {
           <div className="explore-toolbar-content">
             {!datasourceMissing ? (
               <div className="explore-toolbar-content-item">
-                {/*<div
-                  className={classNames(
-                    'explore-ds-picker',
-                    showSmallDataSourcePicker ? 'explore-ds-picker--small' : ''
-                  )}
-                >
-                  <DataSourcePicker
-                    onChange={this.onChangeDatasource}
-                    datasources={getExploreDatasources()}
-                    current={this.getSelectedDatasource()}
-                    showLoading={datasourceLoading === true}
-                    hideTextValue={showSmallDataSourcePicker}
-                  />
-                </div>*/}
+                {
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				}
               </div>
             ) : null}
 

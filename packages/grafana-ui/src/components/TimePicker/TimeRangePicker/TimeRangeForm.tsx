@@ -89,7 +89,7 @@ export const TimeRangeForm: React.FC<Props> = props => {
 
   return (
     <>
-      <Field label="From" invalid={from.invalid} error={errorMessage}>
+      <Field label="От" invalid={from.invalid} error={errorMessage}>
         <Input
           onClick={event => event.stopPropagation()}
           onFocus={onFocus}
@@ -99,7 +99,7 @@ export const TimeRangeForm: React.FC<Props> = props => {
           value={from.value}
         />
       </Field>
-      <Field label="To" invalid={to.invalid} error={errorMessage}>
+      <Field label="До" invalid={to.invalid} error={errorMessage}>
         <Input
           onClick={event => event.stopPropagation()}
           onFocus={onFocus}

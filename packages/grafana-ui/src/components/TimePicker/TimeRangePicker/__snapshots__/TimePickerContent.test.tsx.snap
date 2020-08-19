@@ -80,7 +80,7 @@ exports[`TimePickerContent renders correctly in full screen 1`] = `
         onSelect={[Function]}
         options={Array []}
         timeZone="utc"
-        title="Other quick ranges"
+        title="Другие варианты"
         value={
           Object {
             "from": "2019-12-17T07:48:27.433Z",
@@ -181,7 +181,7 @@ exports[`TimePickerContent renders correctly in narrow screen 1`] = `
         onSelect={[Function]}
         options={Array []}
         timeZone="utc"
-        title="Other quick ranges"
+        title="Другие варианты"
         value={
           Object {
             "from": "2019-12-17T07:48:27.433Z",
@@ -348,7 +348,7 @@ exports[`TimePickerContent renders recent absolute ranges correctly 1`] = `
         onSelect={[Function]}
         options={Array []}
         timeZone="utc"
-        title="Other quick ranges"
+        title="Другие варианты"
         value={
           Object {
             "from": "2019-12-17T07:48:27.433Z",
