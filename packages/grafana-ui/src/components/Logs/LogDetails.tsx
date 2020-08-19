@@ -176,8 +176,8 @@ class UnThemedLogDetails extends PureComponent<Props> {
               <tbody>
                 {labelsAvailable && (
                   <tr>
-                    <td colSpan={5} className={style.logDetailsHeading} aria-label="Log Labels">
-                      Log Labels:
+                    <td colSpan={5} className={style.logDetailsHeading} aria-label="Метки событий">
+                      Метки событий:
                     </td>
                   </tr>
                 )}
