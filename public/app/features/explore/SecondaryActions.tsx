@@ -35,7 +35,7 @@ export function SecondaryActions(props: Props) {
           <span className="btn-title">{'\xA0' + 'Add query'}</span>
         </button>
       )}
-      <!--<button
+      /*<button
         aria-label="Rich history button"
         className={cx(`gf-form-label gf-form-label--btn ${styles.button}`, {
           ['explore-active-button']: props.richHistoryButtonActive,
@@ -44,8 +44,8 @@ export function SecondaryActions(props: Props) {
       >
         <Icon className="icon-margin-right" name="history" size="sm" />
         <span className="btn-title">{'\xA0' + 'Query history'}</span>
-      </button>-->
-      <!--<button
+      </button>
+      <button
         aria-label="Query inspector button"
         className={cx(`gf-form-label gf-form-label--btn ${styles.button}`, {
           ['explore-active-button']: props.queryInspectorButtonActive,
@@ -54,7 +54,7 @@ export function SecondaryActions(props: Props) {
       >
         <Icon className="icon-margin-right" name="info-circle" size="sm" />
         <span className="btn-title">{'\xA0' + 'Query inspector'}</span>
-      </button>-->
+      </button>*/
     </div>
   );
 }
