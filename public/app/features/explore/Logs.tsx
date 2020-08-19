@@ -274,7 +274,7 @@ export class Logs extends PureComponent<Props, State> {
               )}
               onClick={this.onChangeLogsSortOrder}
             >
-              <span className="btn-title">{isFlipping ? 'Flipping...' : 'Flip results order'}</span>
+              <span className="btn-title">{isFlipping ? 'Загрузка...' : 'Изменить порядок'}</span>
             </button>
           </div>
         </div>

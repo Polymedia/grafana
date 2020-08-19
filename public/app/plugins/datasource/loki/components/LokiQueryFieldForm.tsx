@@ -26,12 +26,12 @@ import LokiDatasource from '../datasource';
 
 function getChooserText(hasSyntax: boolean, hasLogLabels: boolean) {
   if (!hasSyntax) {
-    return 'Loading labels...';
+    return 'Загрузка...';
   }
   if (!hasLogLabels) {
-    return '(No labels found)';
+    return '(Меток не найдено)';
   }
-  return 'Log labels';
+  return 'Метки событий';
 }
 
 function willApplySuggestion(suggestion: string, { typeaheadContext, typeaheadText }: SuggestionsState): string {
@@ -171,7 +171,7 @@ export class LokiQueryFieldForm extends React.PureComponent<LokiQueryFieldFormPr
               onChange={this.onChangeQuery}
               onBlur={this.props.onBlur}
               onRunQuery={this.props.onRunQuery}
-              placeholder="Enter a Loki query (run with Shift+Enter)"
+              placeholder="Введите запрос (для выполнения нажмите Shift+Enter)"
               portalOrigin="loki"
               syntaxLoaded={syntaxLoaded}
             />
