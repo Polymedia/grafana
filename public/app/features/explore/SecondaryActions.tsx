@@ -32,7 +32,7 @@ export function SecondaryActions(props: Props) {
           disabled={props.addQueryRowButtonDisabled}
         >
           <Icon className="icon-margin-right" name="plus" size="sm" />
-          <span className="btn-title">{'\xA0' + 'Add query'}</span>
+          <span className="btn-title">{'\xA0' + 'Добавить запрос'}</span>
         </button>
       )}
 {/*<button
