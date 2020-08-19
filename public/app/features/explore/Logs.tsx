@@ -247,7 +247,7 @@ export class Logs extends PureComponent<Props, State> {
               <Switch label="Время" checked={showTime} onChange={this.onChangeTime} transparent />
               <Switch label="Уникальные метки" checked={showLabels} onChange={this.onChangeLabels} transparent />
               <Switch label="Перенос строк" checked={wrapLogMessage} onChange={this.onChangewrapLogMessage} transparent />
-              /*<ToggleButtonGroup label="Дедубликация" transparent={true}>
+{/*<ToggleButtonGroup label="Дедубликация" transparent={true}>
                 {Object.keys(LogsDedupStrategy).map((dedupType: string, i) => (
                   <ToggleButton
                     key={i}
@@ -260,7 +260,7 @@ export class Logs extends PureComponent<Props, State> {
                     {capitalize(dedupType)}
                   </ToggleButton>
                 ))}
-              </ToggleButtonGroup>*/
+</ToggleButtonGroup>*/}
             </div>
             <button
               disabled={isFlipping}

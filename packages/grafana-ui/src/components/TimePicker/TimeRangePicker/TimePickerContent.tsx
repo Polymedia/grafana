@@ -161,7 +161,7 @@ export const TimePickerContentWithScreenSize: React.FC<PropsWithScreenSize> = pr
         <CustomScrollbar className={styles.rightSide}>
           <NarrowScreenForm {...props} visible={!isFullscreen} historyOptions={historyOptions} />
           <TimeRangeList
-            title="Relative time ranges"
+            title="Относительный временной период"
             options={quickOptions}
             onSelect={props.onChange}
             value={props.value}
@@ -208,7 +208,7 @@ const NarrowScreenForm: React.FC<FormProps> = props => {
         className={styles.header}
         onClick={() => setCollapsed(!collapsed)}
       >
-        <TimePickerTitle>Absolute time range</TimePickerTitle>
+        <TimePickerTitle>Абсолютный временной период</TimePickerTitle>
         {<Icon name={collapsed ? 'angle-up' : 'angle-down'} />}
       </div>
       {collapsed && (
@@ -223,7 +223,7 @@ const NarrowScreenForm: React.FC<FormProps> = props => {
           </div>
           {props.showHistory && (
             <TimeRangeList
-              title="Recently used absolute ranges"
+              title="История"
               options={props.historyOptions || []}
               onSelect={props.onChange}
               value={props.value}
@@ -249,7 +249,7 @@ const FullScreenForm: React.FC<FormProps> = props => {
     <>
       <div className={styles.container}>
         <div aria-label="TimePicker absolute time range" className={styles.title}>
-          <TimePickerTitle>Absolute time range</TimePickerTitle>
+          <TimePickerTitle>Абсолютный временной период</TimePickerTitle>
         </div>
         <TimeRangeForm
           value={props.value}
@@ -262,7 +262,7 @@ const FullScreenForm: React.FC<FormProps> = props => {
       {props.showHistory && (
         <div className={styles.recent}>
           <TimeRangeList
-            title="Recently used absolute ranges"
+            title="История"
             options={props.historyOptions || []}
             onSelect={props.onChange}
             value={props.value}

@@ -110,7 +110,7 @@ export const TimeRangeForm: React.FC<Props> = props => {
         />
       </Field>
       <Button aria-label="TimePicker submit button" onClick={onApply}>
-        Apply time range
+        Применить
       </Button>
 
       <TimePickerCalendar

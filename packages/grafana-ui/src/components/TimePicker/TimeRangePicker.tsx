@@ -183,7 +183,7 @@ const TimePickerTooltip = ({ timeRange, timeZone }: { timeRange: TimeRange; time
   return (
     <>
       {dateTimeFormat(timeRange.from, { timeZone })}
-      <div className="text-center">to</div>
+      <div className="text-center">по</div>
       {dateTimeFormat(timeRange.to, { timeZone })}
       <div className="text-center">
         <span className={styles.utc}>{timeZoneFormatUserFriendly(timeZone)}</span>

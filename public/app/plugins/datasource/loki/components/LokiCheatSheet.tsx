@@ -81,7 +81,7 @@ export default class LokiCheatSheet extends PureComponent<ExploreStartPageProps,
 
     return (
       <div>
-        <h2>Loki Cheat Sheet</h2>
+{/*<h2>Loki Cheat Sheet</h2>
         <div className="cheat-sheet-item">
           <div className="cheat-sheet-item__title">See your logs</div>
           <div className="cheat-sheet-item__label">Start by selecting a log stream from the Log labels selector.</div>
@@ -120,7 +120,7 @@ export default class LokiCheatSheet extends PureComponent<ExploreStartPageProps,
             {this.renderExpression(item.expression)}
             <div className="cheat-sheet-item__label">{item.label}</div>
           </div>
-        ))}
+))}*/}
       </div>
     );
   }

@@ -116,7 +116,7 @@ export function LiveTailButton(props: LiveTailButtonProps) {
 
   return (
     <>
-      <Tooltip content={isLive ? <>Pause the live stream</> : <>Live stream your logs</>} placement="bottom">
+      <Tooltip content={isLive ? <>Выключить режим реального времени</> : <>Включить режим реального времени</>} placement="bottom">
         <ResponsiveButton
           splitted={splitted}
           buttonClassName={classNames('btn navbar-button', styles.liveButton, {
