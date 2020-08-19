@@ -86,7 +86,7 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
-    new ForkTsCheckerWebpackPlugin({
+    /*new ForkTsCheckerWebpackPlugin({
       eslint: {
         enabled: true,
         files: ['public/app/**/*.{ts,tsx}', 'packages/*/src/**/*.{ts,tsx}'],
@@ -99,7 +99,7 @@ module.exports = merge(common, {
           syntactic: true,
         },
       },
-    }),
+    }),*/
     new MiniCssExtractPlugin({
       filename: 'grafana.[name].[hash].css',
     }),
