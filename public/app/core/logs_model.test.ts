@@ -241,13 +241,13 @@ describe('dataFrameToLogsModel', () => {
     expect(logsModel.series).toHaveLength(2);
     expect(logsModel.meta).toHaveLength(2);
     expect(logsModel.meta![0]).toMatchObject({
-      label: 'Common labels',
+      label: 'Общие метки',
       value: series[0].fields[1].labels,
       kind: LogsMetaKind.LabelsMap,
     });
     expect(logsModel.meta![1]).toMatchObject({
-      label: 'Limit',
-      value: `1000 (2 returned)`,
+      label: 'Лимит',
+      value: `1000 (2 получено)`,
       kind: LogsMetaKind.String,
     });
   });
@@ -365,7 +365,7 @@ describe('dataFrameToLogsModel', () => {
     expect(logsModel.series).toHaveLength(2);
     expect(logsModel.meta).toHaveLength(1);
     expect(logsModel.meta![0]).toMatchObject({
-      label: 'Common labels',
+      label: 'Общие метки',
       value: {
         foo: 'bar',
       },
@@ -617,8 +617,8 @@ describe('logSeriesToLogsModel', () => {
     const metaData = {
       hasUniqueLabels: false,
       meta: [
-        { label: 'Limit', value: '1000 (0 returned)', kind: 1 },
-        { label: 'Total bytes processed', value: '97  kB', kind: 1 },
+        { label: 'Лимит', value: '1000 (0 returned)', kind: 1 },
+        { label: 'Обработано байт', value: '97  kB', kind: 1 },
       ],
       rows: [],
     };

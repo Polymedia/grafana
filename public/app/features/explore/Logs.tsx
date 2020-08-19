@@ -244,10 +244,10 @@ export class Logs extends PureComponent<Props, State> {
         <div className="logs-panel-options">
           <div className="logs-panel-controls">
             <div className="logs-panel-controls-main">
-              <Switch label="Time" checked={showTime} onChange={this.onChangeTime} transparent />
-              <Switch label="Unique labels" checked={showLabels} onChange={this.onChangeLabels} transparent />
-              <Switch label="Wrap lines" checked={wrapLogMessage} onChange={this.onChangewrapLogMessage} transparent />
-              <ToggleButtonGroup label="Dedup" transparent={true}>
+              <Switch label="Время" checked={showTime} onChange={this.onChangeTime} transparent />
+              <Switch label="Уникальные метки" checked={showLabels} onChange={this.onChangeLabels} transparent />
+              <Switch label="Перенос строк" checked={wrapLogMessage} onChange={this.onChangewrapLogMessage} transparent />
+              <!--<ToggleButtonGroup label="Дедубликация" transparent={true}>
                 {Object.keys(LogsDedupStrategy).map((dedupType: string, i) => (
                   <ToggleButton
                     key={i}
@@ -260,12 +260,12 @@ export class Logs extends PureComponent<Props, State> {
                     {capitalize(dedupType)}
                   </ToggleButton>
                 ))}
-              </ToggleButtonGroup>
+              </ToggleButtonGroup>-->
             </div>
             <button
               disabled={isFlipping}
-              title={logsSortOrder === LogsSortOrder.Ascending ? 'Change to newest first' : 'Change to oldest first'}
-              aria-label="Flip results order"
+              title={logsSortOrder === LogsSortOrder.Ascending ? 'Изменить на сначала новые' : 'Изменить на сначала старые'}
+              aria-label="Изменить порядок сортировки"
               className={cx(
                 'gf-form-label gf-form-label--btn',
                 css`

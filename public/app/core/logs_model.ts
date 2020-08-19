@@ -394,7 +394,7 @@ export function logSeriesToLogsModel(logSeries: DataFrame[]): LogsModel | undefi
   const meta: LogsMetaItem[] = [];
   if (_.size(commonLabels) > 0) {
     meta.push({
-      label: 'Common labels',
+      label: 'Общие метки',
       value: commonLabels,
       kind: LogsMetaKind.LabelsMap,
     });
@@ -410,8 +410,8 @@ export function logSeriesToLogsModel(logSeries: DataFrame[]): LogsModel | undefi
 
   if (limits.length > 0) {
     meta.push({
-      label: 'Limit',
-      value: `${limitValue} (${deduplicatedLogRows.length} returned)`,
+      label: 'Лимит',
+      value: `${limitValue} (${deduplicatedLogRows.length} получено)`,
       kind: LogsMetaKind.String,
     });
   }
@@ -439,7 +439,7 @@ export function logSeriesToLogsModel(logSeries: DataFrame[]): LogsModel | undefi
   if (totalBytes > 0) {
     const { text, suffix } = decimalSIPrefix('B')(totalBytes);
     meta.push({
-      label: 'Total bytes processed',
+      label: 'Обработано байт',
       value: `${text} ${suffix}`,
       kind: LogsMetaKind.String,
     });

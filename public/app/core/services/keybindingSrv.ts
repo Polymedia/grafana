@@ -150,9 +150,9 @@ export class KeybindingSrv {
       return;
     }
 
-    if (search.kiosk) {
-      this.$rootScope.appEvent(CoreEvents.toggleKioskMode, { exit: true });
-    }
+    //if (search.kiosk) {
+    //  this.$rootScope.appEvent(CoreEvents.toggleKioskMode, { exit: true });
+    //}
 
     if (search.search) {
       this.closeSearch();
