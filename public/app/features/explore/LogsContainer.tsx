@@ -135,7 +135,7 @@ export class LogsContainer extends PureComponent<LogsContainerProps, LogsContain
     return (
       <>
         <LogsCrossFadeTransition visible={isLive}>
-          <Collapse label="Logs" loading={false} isOpen>
+          <Collapse label="События" loading={false} isOpen>
             <LiveTailControls exploreId={exploreId}>
               {controls => (
                 <LiveLogsWithTheme
@@ -152,7 +152,7 @@ export class LogsContainer extends PureComponent<LogsContainerProps, LogsContain
         </LogsCrossFadeTransition>
         <LogsCrossFadeTransition visible={!isLive}>
           <Collapse
-            label="Logs"
+            label="События"
             loading={loading}
             isOpen={logsContainerOpen}
             onToggle={this.onToggleCollapse}
