@@ -127,7 +127,7 @@ export function LiveTailButton(props: LiveTailButtonProps) {
           icon={!isLive ? 'play' : 'pause'}
           iconClassName={isLive ? 'icon-brand-gradient' : undefined}
           onClick={onClickMain}
-          title={'\xa0Live'}
+          title={'\xa0Режим реального времени'}
         />
       </Tooltip>
       <CSSTransition
@@ -143,7 +143,7 @@ export function LiveTailButton(props: LiveTailButtonProps) {
         }}
       >
         <div>
-          <Tooltip content={<>Stop and exit the live stream</>} placement="bottom">
+          <Tooltip content={<>Остановить</>} placement="bottom">
             <button
               className={`btn navbar-button navbar-button--attached explore-active-button ${styles.isLive}`}
               onClick={stop}

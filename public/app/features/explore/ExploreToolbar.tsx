@@ -251,7 +251,7 @@ export class UnConnectedExploreToolbar extends PureComponent<Props> {
               <div className="explore-toolbar-content-item explore-icon-align">
                 <ResponsiveButton
                   splitted={splitted}
-                  title="Split"
+                  title="Разделить"
                   /* This way ResponsiveButton doesn't add event as a parameter when invoking split function
                    * which breaks splitting functionality
                    */
@@ -282,7 +282,7 @@ export class UnConnectedExploreToolbar extends PureComponent<Props> {
               <div className="explore-toolbar-content-item explore-icon-align">
                 <ResponsiveButton
                   splitted={splitted}
-                  title="Clear All"
+                  title="Очистить"
                   onClick={this.onClearAll}
                   icon="trash-alt"
                   iconClassName="icon-margin-right"
