@@ -29,6 +29,6 @@ export class PanelHeaderMenu extends PureComponent<Props> {
   };
 
   render() {
-    return <div className="panel-menu-container dropdown open">{this.renderItems(this.props.items)}</div>;
+    return <div className="panel-menu-container"></div>;
   }
 }
