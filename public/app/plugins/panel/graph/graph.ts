@@ -199,11 +199,7 @@ class GraphElement {
       const items: ContextMenuGroup[] = [
         {
           items: [
-            {
-              label: 'Add annotation',
-              icon: 'comment-alt',
-              onClick: () => this.eventManager.updateTime({ from: flotPosition.x, to: null }),
-            },
+            
           ],
         },
       ];
